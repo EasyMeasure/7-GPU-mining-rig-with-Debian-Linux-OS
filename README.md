@@ -29,9 +29,7 @@ The GeForce GTX 1050 Ti OC 4G GPUs are definitely not the fastest ones for minin
 
 **Building the rig**<br>
 There are plenty of youtube videos on how to connect power supply, processor, SDRAM, SSD Drive and riser sets to a motherboard so I'll skip this step.
-Figure 1 shows a photo of the rig that was just built on a wooden plank.
-
-Figure 1. Photo of the mining rig
+The photo at the beginning of this document shows the rig that was simply mounted on a wooden plank.
 
 **Configuration of the motherboard**<br>
 Correct configuration of the BIOS appears to be crucial for making the system to work well with 7 GPUs. It was observed that, out of the box, the motherboard only supported 3 GPUs at the same time and connecting more GPUs resulted in a system that hangs before starting up the operating system. This issue occurs both in Windows and Linux.
