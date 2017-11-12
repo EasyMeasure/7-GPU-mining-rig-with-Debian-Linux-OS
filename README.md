@@ -1,3 +1,4 @@
+![Alt text](relative/path/to/7GPU_mining_rg.jpg?raw=true "Title")
 <h4>7 GPU mining rig using Debian Linux as OS</h4>
 
 **Summary**<br>
