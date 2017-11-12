@@ -125,7 +125,7 @@ xterm -e sudo bash overklokkuh.bash
 
 In the above case, it is assumed that the file overklokkuh.bash is present in the user's home directory ~/
 
-**Hash rate**
+**Hash rate**<br>
 The screenshot below shows the hashrate of the mining rig during dual mining of ethereum and siacoin using the claymore mining software. It is noted that the hashrate of single mining on ethereum will be probably a few percent higher.
 ![Alt text](/hash_rate.png?raw=true "Title")
 
