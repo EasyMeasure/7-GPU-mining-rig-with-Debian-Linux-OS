@@ -90,7 +90,7 @@ Just for the sake of reproducibility: I used the following version of mining sof
 Obviously you can also install your favorite mining software.
 
 **Autostarting the miner after power failure**<br>
-This appears to be less straightforward as it seems when you use the claymore mining software (and probably also other software). What you would like to happen after a power failure is that the computer automatically restarts, logs in and starts the miner.
+This appears to be less straightforward than it seems when you use the claymore mining software (and probably also other software). What you would like to happen after a power failure is that the computer automatically restarts, logs in and starts the miner.
 The automatic restart was realized during configuration of the motherboard. The autologin during installation of the Debian Jessie software, so we only need to make sure that the miner automatically starts.
 What we would like it to do is open a terminal, start the miner and send the output generated during the mining process to the terminal in order to monitor what is going on. However, to realize this, we should start the miner after logging into the GUI and not before that.
 An obvious way to start the miner after each reboot would be to define a cronjob. However, this is executed before logging into the GUI. There are some tricks to go around this, but several issues were encountered.
