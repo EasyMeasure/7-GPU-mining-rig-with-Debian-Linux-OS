@@ -137,8 +137,10 @@ My experience with GPUs is that some of them just crash every once in a while, e
 Since I do not want to pay to much attention to my mining rigs, I automated the start-up of my rigs based on scheduled power off & power on events using a Raspberry Pi and a low cost commercially available relay board that is controlled through USB. Of course you can also build your own solution using the GPIO of the Raspberry Pi, a small single NPN transistor as relay driver and a relay. The photo below shows the RPi with attached relay bord.
 Advantage of the relay board is that it already contains 8 relays and can be used to restart several mining rigs.
 
-The photo shows the RPi with connected USB relay card. The basic idea is that the RPi switches on and switches off a relay at scheduled time intervals and in an endless loop. Since the relay is connected to the power on switch on the motherboard, a power off--wait 5 seconds--power on event can be programmed. I schedule such event every per 2 hours, so in case a GPU causes one of my rigs to hang, only 2 hours maximum of mining time are lost.
+The photo shows the RPi with connected USB relay card. 
 
+The basic idea is that the RPi switches on and switches off a relay at scheduled time intervals and in an endless loop. Since the relay is connected to the power on switch on the motherboard, a power off--wait 5 seconds--power on event can be programmed. I schedule such event every per 2 hours, so in case a GPU causes one of my rigs to hang, only 2 hours maximum of mining time are lost.
+![Alt text](/RPi_controller.jpg?raw=true "Title")
 Of course, also the raspberry pi may crash thereby stopping the miners to restart regularly but this is not observed in practice. In order to prevent the Raspberry Pi to keep hanging in case of a very short power dip in the public grid, one might invest in a UPS and / or use a mechanical time clock to automatically restart the Raspberry Pi once a day. My experience is that this is not worth the effort in The Netherlands.
 
 **Cheers and have fun!!!**
