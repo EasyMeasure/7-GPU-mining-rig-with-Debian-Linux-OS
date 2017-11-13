@@ -129,6 +129,18 @@ In the above case, it is assumed that the file overklokkuh.bash is present in th
 The screenshot below shows the hashrate of the mining rig during dual mining of ethereum and siacoin using the claymore mining software. It is noted that the hashrate of single mining on ethereum will be probably a few percent higher.
 ![Alt text](/hash_rate.png?raw=true "Title")
 
+**Auto restart of the mining rigs**<br>
+It appears that every once and a while, a communication error between mother board and GPU occurs. Mostly, these issues can be dealt with by automatically restarting the system regularly e.g., once per two hours through a cronjob. However, sometimes a communication error results in the system to hang. In such case, defining a cronjob fails to restart the system.
+
+My experience with GPUs is that some of them just crash every once in a while, even at factory settings. Slightly underclocking the GPU concerned sometimes helps but this doesn't provide a bullet proof solution. Also, I sometimes observed the exact opposite i.e., that some GPUs that tend to crash, perform more stable than factory settings if they are overclocked.
+
+Since I do not want to pay to much attention to my mining rigs, I automated the start-up of my rigs based on scheduled power off & power on events using a Raspberry Pi and a low cost commercially available relay board that is controlled through USB. Of course you can also build your own solution using the GPIO of the Raspberry Pi, a small single NPN transistor as relay driver and a relay. The photo below shows the RPi with attached relay bord.
+Advantage of the relay board is that it already contains 8 relays and can be used to restart several mining rigs.
+
+The photo shows the RPi with connected USB relay card. The basic idea is that the RPi switches on and switches off a relay at scheduled time intervals and in an endless loop. Since the relay is connected to the power on switch on the motherboard, a power off--wait 5 seconds--power on event can be programmed. I schedule such event every per 2 hours, so in case a GPU causes one of my rigs to hang, only 2 hours maximum of mining time are lost.
+
+Of course, also the raspberry pi may crash thereby stopping the miners to restart regularly but this is not observed in practice. In order to prevent the Raspberry Pi to keep hanging in case of a very short power dip in the public grid, one might invest in a UPS and / or use a mechanical time clock to automatically restart the Raspberry Pi once a day. My experience is that this is not worth the effort in The Netherlands.
+
 **Cheers and have fun!!!**
 
 **Mateo Mayer**
