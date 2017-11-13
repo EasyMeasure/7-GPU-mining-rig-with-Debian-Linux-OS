@@ -145,7 +145,10 @@ Since the wires from the relay card to the motherboard are relatively long i.e.,
 ![Alt text](/100nF_caps.jpg?raw=true "Title")
 The wires from the relay are connected to the motherboard by welding them onto the connector that comes along with the motherboard. I simply bent the pwr and groud pin of the connector and welded the wires to it, see the photo below.
 ![Alt text](/mother_board.jpg?raw=true "Title")
-Of course, also the raspberry pi may crash thereby stopping the miners to restart regularly but this is not observed in practice. In order to prevent the Raspberry Pi to keep hanging in case of a very short power dip in the public grid, one might invest in a UPS and / or use a mechanical time clock to automatically restart the Raspberry Pi once a day. My experience is that this is not worth the effort in The Netherlands.
+Of course, also the raspberry pi may crash, thereby stopping the miners to restart regularly but this is not observed in practice. In order to prevent the Raspberry Pi to keep hanging, in case of a very short power dip in the public grid, one might invest in a UPS and / or use a mechanical time clock to automatically restart the Raspberry Pi once a day. My experience is that this is not worth the effort in The Netherlands.
+
+In the photo below you see the Raspberry Pi in action controlling 3 mining rigs that were build according to the procedure above. Two rigs on the picture have a GPU that making the rig hang at a frequency of about once per one or two days. Thanks to the auto restart of the RPi, this is not a problem in practise.
+![Alt text](/3_rigs.jpg?raw=true "Title")
 
 **Cheers and have fun!!!**
 
