@@ -143,7 +143,9 @@ The basic idea is that the RPi switches on and switches off a relay at scheduled
 ![Alt text](/RPi_controller.jpg?raw=true "Title")
 Since the wires from the relay card to the motherboard are relatively long i.e., 2.5 meter in my case, 100 nF capacitors were welded over the relay output in order to suppress noise signals, see the photo below. This may be a bit overdone but I observed in other applications that communication between the relay card and the RPi can be disturbed, resulting in the RPi to hang.
 ![Alt text](/100nF_caps.jpg?raw=true "Title")
-Of course, also the raspberry pi may crash thereby stopping the miners to restart regularly but this is not observed in practice. In order to prevent the Raspberry Pi to keep hanging in case of a very short power dip in the public grid, one might invest in a UPS and / or use a mechanical time clock to automatically restart the Raspberry Pi once a day. My experience is that this is not worth the effort in The Netherlands.x
+The wires from the relay are connected to the motherboard by welding them onto the connector that comes along with the motherboard. I simply bent the pwr and groud pin of the connector and welded the wires to it, see the photo below.
+![Alt text](/mother_board.jpg?raw=true "Title")
+Of course, also the raspberry pi may crash thereby stopping the miners to restart regularly but this is not observed in practice. In order to prevent the Raspberry Pi to keep hanging in case of a very short power dip in the public grid, one might invest in a UPS and / or use a mechanical time clock to automatically restart the Raspberry Pi once a day. My experience is that this is not worth the effort in The Netherlands.
 
 **Cheers and have fun!!!**
 
